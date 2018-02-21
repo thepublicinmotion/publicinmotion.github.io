@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>MetroMaps</title>
+        
+    
+        
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <meta charset=utf-8 />    
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+        
+    <style>
+        
+    #container {
+      position: relative;
+      height: 600px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+         }
+        
+    #textbox {
+     position: absolute;
+     margin-top: 20px;
+     margin-right: 20px;
+     margin-left: 20px;
+     margin-bottom: 50px;
+     padding-bottom: 50px;
+        }
+        
+     #title { 
+     color:black;
+     font-family: "Verdana", sans-serif;
+     font-size: 20px;
+        }
+        
+    #article {
+        font-family: "Times New Roman", serif;
+        color:black;
+        }
+    
+    #map { 
+      position:absolute; 
+     
+      height: 600px;
+      width:100%; }
+        
+    </style>
+    <!--
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+   -->
+    </head>
+    <body>
+        
+        <iframe width="100%" height="750" frameborder="0" src="https://mstepniak.carto.com/viz/05d692ec-b34f-11e6-9764-0e98b61680bf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+     
+        
+        <!--
+        <div>
+        <iframe width="100%" height="520" frameborder="0" src="https://mstepniak.cartodb.com/viz/8ae436be-0289-11e6-a692-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+   
+        
+   
+    <div id='container'>
+        <div id='map'></div>
+    </div>
+        
+    <div id='textbox'>
+    -->
+   
+        
+        
+        
+        
+    </div>
+    
+    <!--    
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA';
+        var map = L.map('map').setView([42.431572, -83.294734], 10);
+        
+     L.tileLayer(
+    'https://api.mapbox.com/styles/v1/mstepniak/cinamx0jk000kackp9r7jjbsi/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+        
+    $.getJSON('https://cdn.rawgit.com/communitymaps/communitymaps.github.io/master/Geojson/v.geojson', function (data) {
+    L.geoJson(data, {
+            /*
+             * Add a popup to each "layer" (shape in the GeoJSON),
+             * in this case the popup simply contains the NAME property.
+             */
+            onEachFeature: function (feature, layer) {
+              layer.bindPopup('name: ' + feature.properties.C_NAMELSAD);
+            },
+            style: {
+                color: "black",
+                weight: 2,
+                fillOpacity: .05
+            }
+          }).addTo(map);
+ })
+        
+    </script>
+-->
+    
+    
+    </body>
+</html>
